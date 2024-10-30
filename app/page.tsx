@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export default function Home() {
@@ -10,7 +10,10 @@ export default function Home() {
       <p className="mb-4">
         This is a self-hosted application for managing product reviews.
       </p>
-      <Link href="/admin">Go to Admin Panel</Link>
+
+      <Link href="/admin">
+        <Button>View Products</Button>
+      </Link>
     </div>
   );
 }
